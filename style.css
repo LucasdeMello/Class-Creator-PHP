@@ -1,0 +1,11 @@
+body{width: 42%;}
+h2{margin-bottom: 30px;margin-left: 13px;}
+form{width: 100%;height: 80px;}
+form label {margin-left: 7px;}
+form #atributo,#variavel{width: 45%;float: left;margin: 0% 2%}
+form #classname{width: 24%;float: left;}
+form input {margin: 4.2%;}
+button{margin-left: 2%;}
+#formulario,#copia{width: 54%;float: left;}
+#botao{width: 50%;float: left;position: relative;margin-left: 36%;z-index: 999;margin-top: -6%;}
+#enviar{width: 51%;float: left;}
