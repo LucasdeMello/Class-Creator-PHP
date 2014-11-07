@@ -55,7 +55,6 @@
         </div>
 
     <?php
-        //display none
         if (isset($_POST["enviar"]))
         {
             //Variaveis
