@@ -85,7 +85,6 @@
                 $strFile .= "    }". "\r\n";
                 $strFile .= "\r\n    //SET GET";
                 $strFile .= "}";
-                $strFile .= "\r\n".'?>';
             }
             
             //Retirando os valores das variaveis e as estruturando
