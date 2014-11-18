@@ -1,0 +1,23 @@
+body{width: 90%;}
+
+h1,h2{margin-top: 2%;
+	  margin-bottom: 2%;
+	  margin-left: 3%;}
+
+.form,.copia{width: 40%;
+	  		 margin-left: 3%;
+	  		 height: 70px;}
+
+.ajuste{width: 30%;
+		float: left;
+		height: 70px;
+		margin-right: 2%;}
+
+#enviar {margin-top: 1%;
+		 width: 100%;
+	  	 margin-left: 3%;
+	  	 float: left;}
+	  	 
+#enviar input {margin-right: 2%;}
+
+.metodo{width: 80%;}

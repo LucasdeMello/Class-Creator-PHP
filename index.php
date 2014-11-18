@@ -3,58 +3,40 @@
     <head>
         <title>Criador de Classes Automatico</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <script type="text/javascript" src="jquery-1.11.1.min.js"></script>
-
-        <script>
-        $(document).ready(function()
-        {
-            $("button").click(function()
-            {
-                var copia = "";
-                var copia = '<div id="copia"><div id="atributo"><label for="nomeatributo">Nome do Atributo: </label><input type="text" class="form-control" name="nomeatributo[]" value=""></div><div id="variavel"><label for="variavel">Nome da Variavel: </label><input type="text" class="form-control" name="variavel[]"></div></div>';
-                $(copia).clone().insertAfter("#oculto");
-            });
-        });
-
-        function Fechar()
-        {
-            $("#copia").remove();
-        }
-        </script>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="js/java.js"></script>
     </head>
 
     <body>
-        <h2>Criador de Classes Automatico</h2>
-        <form action="index.php" method="POST">
-            <div id="oculto"></div>
-            <div id="formulario">
-                <div id="atributo">
-                    <label for="nomeatributo">Nome do Atributo: </label>
-                    <input type="text" class="form-control" name="nomeatributo[]" value="">
-                </div>
+        <h1>Criador de Classes Automatico</h1>
 
-                <div id="variavel">
-                    <label for="variavel">Nome da Variavel: </label>
-                    <input type="text" class="form-control" name="variavel[]">
+        <h2>GET SET</h2>
+        <form action="" method="POST">
+            <div class="form">
+                <div class="ajuste">
+                <label for="nomeatributo">Nome do Atributo: </label>
+                <input type="text" class="form-control" name="nomeatributo[]" value="">
                 </div>
-            </div>
-
-            <div id="classname">
+                <div class="ajuste">
+                <label for="variavel">Nome da Variavel: </label>
+                <input type="text" class="form-control" name="variavel[]">
+                </div>
+                <div class="ajuste">
                 <label for="classe">Nome da Classe: </label>
                 <input type="text" class="form-control" name="classname">
+                </div>
             </div>
+            <div id="oculto"></div>
             <div id="enviar">
                 <input type="submit" class="btn btn-danger" name="enviar" value="enviar">
-                <input id="deletar" type="button" onclick="javasript:Fechar()" class="btn btn-danger"value="Deletar">
+                <input id="adicionar" type="button" class="btn btn-danger" value="Adicionar" onclick="javasript:Adicionar()">
             </div>
-        </form>
-        <div id="botao">
-            <button class="btn btn-danger">Adicionar</button>
-        </div>
 
-    <?php
+            <div id="oculto1"></div>
+        </form>
+        <?php
         if (isset($_POST["enviar"]))
         {
             //Variaveis
